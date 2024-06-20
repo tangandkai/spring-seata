@@ -1,0 +1,21 @@
+server:
+  port: 8005
+  servlet:
+    context-path: /business-service
+
+
+spring:
+  profiles:
+    include: dubbo,seata
+  application:
+    name: business-service
+
+# 暴露端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

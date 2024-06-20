@@ -1,0 +1,29 @@
+seata:
+  application-id: order-service
+  tx-service-group: default_tx_group
+  enabled: true
+  enable-auto-data-source-proxy: true
+  use-jdk-proxy: false
+  #  service:
+  #    vgroupMapping:
+  #      default_tx_group: default
+  #    grouplist:
+  #      default: 127.0.0.1:8091
+  #  registry:
+  #    type: nacos
+  #    nacos:
+  #      application: seata-server
+  #      server-addr: 127.0.0.1:8848
+  #      namespace: 467933e6-ee4e-4e23-954f-0219805f51c5
+  #      username: nacos
+  #      password: nacos
+  #      group: SEATA_GROUP
+  config:
+    type: nacos
+    nacos:
+      server-addr: 127.0.0.1:8848
+      namespace: 467933e6-ee4e-4e23-954f-0219805f51c5
+      group: SEATA_GROUP
+      username: nacos
+      password: nacos
+      data-id: seataServer.properties

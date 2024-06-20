@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-dubbo-business" />
+        <module name="spring-dubbo-storage" />
+        <module name="spring-dubbo-account" />
+        <module name="spring-dubbo-order" />
+        <module name="spring-dubbo-mvc" />
+        <module name="spring-dubbo-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-dubbo-account" options="-parameters" />
+      <module name="spring-dubbo-api" options="-parameters" />
+      <module name="spring-dubbo-business" options="-parameters" />
+      <module name="spring-dubbo-mvc" options="-parameters" />
+      <module name="spring-dubbo-order" options="-parameters" />
+      <module name="spring-dubbo-storage" options="-parameters" />
+    </option>
+  </component>
+</project>
